@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls'), name="inicio"),
     path('acesso/', include('contas.urls'), name="acesso"),
+    path('cliente/macropack/', include('macropack.urls'), name="cliente_macropack"),
 ]
