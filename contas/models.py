@@ -5,15 +5,12 @@ from django.contrib.auth.validators import UnicodeUsernameValidator
 class User(AbstractUser):
 
     username = models.CharField(
-        error_messages={'unique': 'A user with that username already exists.'},
-        help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.',
         max_length=150,
-        validators=[UnicodeUsernameValidator()],
-        verbose_name='Nome'
+        verbose_name='Apelido'
     )
 
     email = models.EmailField(
-        verbose_name='E-mail',
+        verbose_name='Usuário(E-mail)',
         max_length=255,
         unique=True,
     )
