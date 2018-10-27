@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
+    'fa',
     'home',
     'contas',
     'macropack',
+    'modelos',
 ]
 
 MIDDLEWARE = [
@@ -118,7 +121,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# ESTÁTICOS
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    'statics',
+]
+# MEDIA
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media'
+
+# LOGIN
+LOGIN_URL = '/acesso/entrar'
+LOGIN_REDIRECT_URL = 'home'
+
+# USUÁRIO CUSTOMIZADO
 AUTH_USER_MODEL = 'contas.User'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

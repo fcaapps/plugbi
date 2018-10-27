@@ -1,0 +1,176 @@
+.home {
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.acesso-negado-cadeado {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.acesso-negado {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.container-centralizado {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.linha-centralizada {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cursor-imagem {
+    cursor: pointer;
+}
+
+
+.cards-apresentacao {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.cards-modelo {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-modal {
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.background-menu {
+    background-color: #10282f;
+}
+.nav-barra-lista-rel {
+    background-color: #205060;
+}
+
+.background-header {
+    background-color: #081418;
+    color: #707070;
+}
+
+.background-footer {
+    background-color: #081418;
+    color: #707070;
+}
+
+.cor-botao-home {
+    background-color: #505050;
+    color: #ffffff;
+    margin: 0.5px;
+}
+
+.background-corpo {
+    background-color: #707070;
+    color: #000000;
+}
+
+.background-jumb {
+    background-color: #4d4d4d;
+}
+
+.footer-page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar-cor-customer {
+    color: #b04632;
+}
+
+.cabecalho-login {
+    margin-bottom: 5%;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+
+
+.espacoigual {
+    margin: 150px;
+}
+
+.alinhar-direita {
+    margin-right: 5%
+}
+
+.centro {
+    width:568px;
+    height:428px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-284px;
+    margin-left:-214px;
+}
+
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-2{
+    padding: 2%;
+    background: #b04632;
+    border-radius: 1rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #b04632;
+    background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}

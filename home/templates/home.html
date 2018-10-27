@@ -1,13 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Teste Home</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% load font_awesome %}
+{% block title %}{% endblock %}
+{% block main %}
+        <!--Boas vindas    -->
+        <div class="container-fluid">
+            <div class="jumbotron" style="margin: 20px;">
+              <h1 class="display-4" style="padding: 10px;"><strong>@Plug BI</strong></h1>
+              <p class="lead">Sistema Online de Informação Gerencial - Dashboards e Relatórios</p>
+              <hr class="my-4">
+              <p>Cada dia que seu negócio cresce você se vê na difícil missão de organizar as informações para melhor
+                 <strong>tomada de decisão.</strong> Por isso, resolvemos reunir num só lugar de maneira rápida e prática tudo o que precisa
+                 para saber como anda a sua empresa. <strong>@PlugBI</strong> reúne alguns templates e modelos de relatórios com alto impacto
+                 de informação agrupados e condensados para uma melhor visualização de todo os seus dados. Nos preocupamos em fornecer
+                 a lógica necessária ao reunir as informações seguindo os padrões e regras de cada área de negócio: <strong>Vendas, Compras, Financeiro,
+                 Logística</strong> e muito mais. Caso precise de mais informações para sua seleta tomada de decisão nos dispomos a criar modelos
+                 que corresponda mais a realidade que espera enxergar em seu negócio.
+              </p>
+              <hr class="my-4">
+              <a class="btn btn-secondary btn-lg" href="{% url 'modelos' %}" role="button">>> Modelos Disponíveis</a>
+            </div>
+        </div>
+
+{% endblock %}

@@ -21,4 +21,5 @@ urlpatterns = [
     path('home/', include('home.urls'), name="inicio"),
     path('acesso/', include('contas.urls'), name="acesso"),
     path('cliente/macropack/', include('macropack.urls'), name="cliente_macropack"),
+    path('modelos/', include('modelos.urls'), name="modelos_bi"),
 ]

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load font_awesome %}
+{% block title %}{% endblock %}
+{% load bootstrap4 %}
+{% block main %}
+   <div class="container">
+      <div class="row">
+        <div class="col home">
+            <div class="col-md-6 login-form-2">
+                    <h3 class="cabecalho-login">@PlugBI - Login</h3>
+                    <form method="post">
+                        {% csrf_token %}
+            		    {% bootstrap_form form layout='inline'%}
+                        {% buttons %}
+                            <button type="submit" class="btnSubmit">
+                                Entrar
+                            </button>
+                        {% endbuttons %}
+                    </form>
+            </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
