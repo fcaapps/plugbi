@@ -11,5 +11,12 @@ class UserAdmin(UserBaseAdmin):
         ('Permissions', {'fields': ('is_active','is_staff', 'is_superuser', 'user_permissions')}),
     )
 
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': ('email', 'username', 'password1', 'password2')}
+         ),
+    )
+
 admin.site.unregister(Group)
 admin.site.register(User, UserAdmin)
