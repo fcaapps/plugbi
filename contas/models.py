@@ -9,6 +9,8 @@ class User(AbstractUser):
         unique=True,
     )
 
+
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username',]
 
