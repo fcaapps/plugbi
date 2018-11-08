@@ -6,7 +6,7 @@ from .models import User
 
 class FilterUserAdmin(UserBaseAdmin):
     def save_model(self, request, obj, form, change):
-        obj.author = request.user
+        obj.created_by = request.user
         obj.save()
 
     def get_queryset(self, request):
@@ -14,7 +14,7 @@ class FilterUserAdmin(UserBaseAdmin):
         qs = super(FilterUserAdmin, self).get_queryset(request)
         if request.user.is_superuser:
             return qs
-        return qs.filter(author=request.user)
+        return qs.filter(created_by=request.user)
 
     # def has_change_permission(self, request, obj=None):
     #     if not obj:

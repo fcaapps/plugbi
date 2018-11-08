@@ -26,7 +26,7 @@ class User(AbstractUser):
         unique=True,
     )
 
-    author = models.ForeignKey('contas.User', verbose_name='Autor', null=True, blank=True, on_delete=models.CASCADE)
+    created_by = models.ForeignKey('contas.User', verbose_name='Criado por', null=True, blank=True, on_delete=models.CASCADE)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username',]
